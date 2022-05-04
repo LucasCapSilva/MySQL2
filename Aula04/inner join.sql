@@ -39,12 +39,3 @@ SELECT COUNT(*) FROM tb_produtos;
 SELECT AVG(preco) AS media FROM tb_produtos;
 
 SELECT SUM(preco)FROM tb_produtos ;
-
-select nome, preco, qtProduto, tb_categoria.descricao as descricao_da_categoria ,tb_categoria.ativo as estado_da_categoria
- from tb_produtos inner join tb_categoria on  tb_categoria.id = tb_produtos.categoria_id;
- 
- select nome, preco, qtProduto, tb_categoria.descricao as descricao_da_categoria ,tb_categoria.ativo as estado_da_categoria
- from tb_produtos left join tb_categoria on  tb_categoria.id = tb_produtos.categoria_id;
- 
-  select nome, preco, qtProduto, tb_categoria.descricao as descricao_da_categoria ,tb_categoria.ativo as estado_da_categoria
- from tb_produtos right join tb_categoria on  tb_categoria.id = tb_produtos.categoria_id;
