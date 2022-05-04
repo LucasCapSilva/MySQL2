@@ -1,4 +1,4 @@
-
+create database db_cidade_das_carnes;
 
 create table tb_produtos (
 id bigint(5) auto_increment,
